@@ -1,4 +1,3 @@
-import e from 'express';
 import express from 'express';
 import mongoose from 'mongoose';
 
@@ -9,7 +8,7 @@ import Videos from './dbModel.js';
 
 // Server config
 const app = express();
-const port = provess.env.PORT || 9000;
+const port = process.env.PORT || 9000;
 
 
 
@@ -19,8 +18,8 @@ app.use(express.json());
 
 // Set Cors headers
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Headers", "*");
+    res.setHeader("Access-Control-Allow-Origin", "*"),
+    res.setHeader("Access-Control-Allow-Headers", "*"),
     next();
 })
 
