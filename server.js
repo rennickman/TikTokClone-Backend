@@ -9,7 +9,7 @@ import Videos from './dbModel.js';
 
 // Server config
 const app = express();
-const port = 9000;
+const port = provess.env.PORT || 9000;
 
 
 
